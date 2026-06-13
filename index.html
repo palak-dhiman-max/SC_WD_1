@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaForge | Dark Digital Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="NovaForge home">
+          <span class="brand-mark">N</span>
+          <span>NovaForge</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#work">Work</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Dark-mode web experiences</p>
+          <h1>Launch a sharper digital presence with a landing page that feels alive.</h1>
+          <p class="hero-copy">
+            NovaForge designs fast, responsive product pages for founders, agencies, and
+            creative teams who need clarity, motion, and conversion without visual clutter.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start a Project</a>
+            <a class="btn btn-secondary" href="#work">View Work</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Project performance metrics">
+          <div>
+            <span class="metric">98</span>
+            <span class="metric-label">Lighthouse score</span>
+          </div>
+          <div>
+            <span class="metric">3.2x</span>
+            <span class="metric-label">More demo requests</span>
+          </div>
+          <div>
+            <span class="metric">24h</span>
+            <span class="metric-label">Prototype turnaround</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" aria-label="Trusted by teams">
+        <span>Product Strategy</span>
+        <span>Responsive UI</span>
+        <span>Launch Systems</span>
+        <span>Motion Design</span>
+      </section>
+
+      <section class="section section-grid" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Everything your landing page needs to look refined and work hard.</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="card-icon">01</span>
+            <h3>Interface Design</h3>
+            <p>Clean visual systems, thoughtful spacing, and reusable sections built for modern screens.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">02</span>
+            <h3>Frontend Build</h3>
+            <p>Semantic HTML, responsive CSS, and purposeful JavaScript interactions without heavy frameworks.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">03</span>
+            <h3>Conversion Polish</h3>
+            <p>Clear calls to action, proof points, and page flow designed to guide visitors toward action.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section showcase" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Dark interfaces with depth, contrast, and confident product storytelling.</h2>
+        </div>
+        <div class="showcase-layout">
+          <article class="project project-large">
+            <p>Fintech dashboard</p>
+            <h3>PulseLedger</h3>
+          </article>
+          <article class="project">
+            <p>AI platform</p>
+            <h3>SignalNest</h3>
+          </article>
+          <article class="project">
+            <p>Creative studio</p>
+            <h3>ArcLab</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Built for teams that want a page to feel premium from the first scroll.</h2>
+        </div>
+        <p>
+          We combine visual direction, frontend craft, and launch-focused messaging into one
+          smooth process. The result is a landing page that feels modern, loads quickly, and
+          keeps its navigation accessible from every point on the page.
+        </p>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-content">
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to shape your next launch?</h2>
+          <p>Tell us what you are building and we will map the first version of your landing page.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Project
+            <textarea name="project" rows="4" placeholder="A short project summary"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 NovaForge Studio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
